@@ -19,19 +19,6 @@ body {
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
 }
 
-/* Page-specific backgrounds */
-body.wallet-page {
-    background: linear-gradient(135deg, #8B4513 0%, #A0522D 100%);
-}
-
-body.phone-page {
-    background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
-}
-
-body.keys-page {
-    background: linear-gradient(135deg, #434343 0%, #000000 100%);
-}
-
 /* ========================================
    LAYOUT COMPONENTS
    ======================================== */
@@ -40,10 +27,6 @@ body.keys-page {
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
-}
-
-.container.detail-page {
-    max-width: 900px;
 }
 
 /* ========================================
@@ -73,27 +56,9 @@ h1 {
 header h1 {
     background: linear-gradient(45deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
     font-weight: bold;
-}
-
-/* Detail page h1 styles */
-.detail-page h1 {
-    text-transform: none;
-    letter-spacing: normal;
-    color: #333;
-}
-
-.wallet-page .content-section h1 {
-    color: #8B4513;
-}
-
-.phone-page .content-section h1 {
-    color: #2a5298;
-}
-
-.keys-page .content-section h1 {
-    color: #434343;
 }
 
 .tagline, .subtitle {
@@ -154,36 +119,6 @@ nav ul li a:hover {
     transform: scale(1.05);
 }
 
-/* Back link styling */
-.back-link {
-    color: #EAE8FF !important;
-    position: relative;
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
-}
-
-.back-link:hover {
-    background: rgba(255, 255, 255, 0.1);
-}
-
-/* Active/current page highlight */
-.wallet-page nav a[href="wallet.html"],
-.phone-page nav a[href="phone.html"],
-.keys-page nav a[href="keys.html"] {
-    background: linear-gradient(45deg, rgba(34,193,195,0.3) 0%, rgba(253,187,45,0.3) 100%);
-}
-
-/* Gradient text effect for current page */
-.wallet-page nav a[href="wallet.html"],
-.phone-page nav a[href="phone.html"],
-.keys-page nav a[href="keys.html"] {
-    background: linear-gradient(45deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-weight: bold;
-}
-
 /* ========================================
    HOMEPAGE GRID
    ======================================== */
@@ -240,6 +175,7 @@ nav ul li a:hover {
     font-size: 1.5em;
     background: linear-gradient(45deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
     margin-bottom: 10px;
     font-weight: bold;
@@ -336,46 +272,6 @@ nav ul li a:hover {
     justify-content: center;
 }
 
-.wallet-page .hero-image {
-    background: linear-gradient(135deg, #8B4513 0%, #A0522D 100%);
-}
-
-.phone-page .hero-image {
-    background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
-}
-
-.keys-page .hero-image {
-    background: linear-gradient(135deg, #434343 0%, #000000 100%);
-}
-
-.hero-image::before {
-    font-size: 150px;
-    opacity: 0.8;
-}
-
-.wallet-page .hero-image::before {
-    content: '👛';
-}
-
-.phone-page .hero-image::before {
-    content: '📱';
-}
-
-.keys-page .hero-image::before {
-    content: '🔑';
-}
-
-.photo-placeholder {
-    position: absolute;
-    bottom: 20px;
-    right: 20px;
-    background: rgba(255, 255, 255, 0.9);
-    padding: 10px 20px;
-    border-radius: 10px;
-    font-size: 0.9em;
-    color: #666;
-}
-
 .content-section {
     padding: 40px;
 }
@@ -414,18 +310,6 @@ nav ul li a:hover {
     margin-bottom: 10px;
 }
 
-.wallet-page .feature h3 {
-    color: #8B4513;
-}
-
-.phone-page .feature h3 {
-    color: #2a5298;
-}
-
-.keys-page .feature h3 {
-    color: #434343;
-}
-
 .feature p {
     color: #666;
     line-height: 1.6;
@@ -440,18 +324,7 @@ nav ul li a:hover {
     padding: 40px;
     border-radius: 15px;
     margin-top: 40px;
-}
-
-.wallet-page .why-section {
-    background: linear-gradient(135deg, #8B4513 0%, #A0522D 100%);
-}
-
-.phone-page .why-section {
-    background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
-}
-
-.keys-page .why-section {
-    background: linear-gradient(135deg, #434343 0%, #000000 100%);
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
 }
 
 .why-section h2 {
@@ -476,25 +349,8 @@ nav ul li a:hover {
     border-radius: 15px;
 }
 
-.detail-page .specs {
-    background: white;
-    border: 2px solid #f0f0f0;
-}
-
 .specs h3 {
     margin-bottom: 20px;
-}
-
-.wallet-page .specs h3 {
-    color: #8B4513;
-}
-
-.phone-page .specs h3 {
-    color: #2a5298;
-}
-
-.keys-page .specs h3 {
-    color: #434343;
 }
 
 .spec-list {
@@ -509,15 +365,6 @@ nav ul li a:hover {
     border-radius: 8px;
     display: flex;
     justify-content: space-between;
-}
-
-.wallet-page .spec-list li {
-    background: white;
-}
-
-.phone-page .spec-list li,
-.keys-page .spec-list li {
-    background: #f9f9f9;
 }
 
 .spec-label {
@@ -621,6 +468,7 @@ nav ul li a:hover {
 .titanium-highlight {
     background: linear-gradient(135deg, #c0c0c0 0%, #808080 100%);
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
     font-weight: bold;
 }
